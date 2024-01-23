@@ -4,11 +4,60 @@ body {
     background-color: #FFFFFF;
 }
 
+* {
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    margin: 0;
+}
+
 ul {
     list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
-header {
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1128px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header {
     background: #FFFFFF;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
+
+.header .container {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 
 .header-nav-logo {
@@ -20,11 +69,16 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 
 .studio {
     color: #2e2f42;
     font-family: "Raleway", sans-serif;
+}
+
+.header-nav-item {
 }
 
 .header-nav-link {
@@ -34,6 +88,8 @@ header {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
 }
 
 .header-nav-link:hover, 
@@ -54,11 +110,22 @@ header {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
+
+.header-address-item {
 }
 
 .header-address-link:hover, 
 .header-address-link:focus {
     color: #404bbf;
+}
+
+.effective-solutions .container {
+    margin: 0 auto;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .effective-solutions-text {
@@ -69,6 +136,9 @@ header {
     line-height: 60px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 496px;
 }
 
 .effective-solutions {
@@ -84,6 +154,13 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    border-radius: 4px;
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .button:hover, .button:focus {
@@ -94,11 +171,21 @@ header {
     background: #FFF;
 }
 
+.our-qualities .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.our-qualities-link {
+    width: 100%;
+    max-width: 264px;
+}
+
 .our-qualities-text {
     color:#2E2F42;
     font-size: 20px;
     font-weight: 500;
-    line-height: 1.20;
+    line-height: 1.20;  
     letter-spacing: 0.02em;
 }
 
@@ -107,6 +194,7 @@ header {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 8px;
 }
 
 .our-team {
