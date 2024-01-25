@@ -243,6 +243,7 @@ img {
 
 .our-team-link {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
 }
 
 .our-team-info {
@@ -290,7 +291,8 @@ img {
 }
 
 .our-portfolio-info {
-
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 
@@ -312,6 +314,7 @@ img {
     font-weight: 500;
     line-height: 1.20;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .our-portfolio-paragraph {
